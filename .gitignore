@@ -1,7 +1,7 @@
 /bootstrap/compiled.php
 .env.*.php
 .env.php
-
+.idea
 /ad4matLoginLineman
 /public/demo
 /public/less
@@ -18,7 +18,7 @@ composer.json.save
 .env.local.php
 .DS_Store
 .metadata
-.idea
+
 .project
 _ide_helper*
 Thumbs.db
