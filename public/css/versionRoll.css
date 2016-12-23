@@ -1,0 +1,294 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ad4matCss */
+
+body,
+.modal-body {
+    font-family: Titillium Web, Arial, Sans-Serif;
+    color: #404040;
+    background: #f8f9f9;
+}
+
+.header {
+    height: 100px;
+    line-height: 100px;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 2px -2px #555;
+       -moz-box-shadow: 0 2px 2px -2px #555;
+            box-shadow: 0 2px 2px -2px #555;
+}
+
+div.header div{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 26px;
+}
+
+div.header img {
+    float: left;
+    margin: 42px 20px 0 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.topbtn {
+    background-color: #edecea;
+    float: right;
+    color: #0099cc;
+    margin: 20px 0 20px 10px;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 3px;
+        -webkit-box-shadow: 0 2px 2px -2px #555;
+           -moz-box-shadow: 0 2px 2px -2px #555;
+                box-shadow: 0 2px 2px -2px #555;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.versionlog {
+    background: #edecea;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px -2px #555;
+       -moz-box-shadow: 0 2px 2px -2px #555;
+            box-shadow: 0 2px 2px -2px #555;
+}
+
+.versionlog.blue {
+    background: #d6e8ee;
+}
+
+.top {
+    width: 100%;
+}
+
+.top p,
+.bottom p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0099cc;
+}
+
+.top p {
+    float: left;
+    margin-right: 10px;
+}
+
+.bottom p {
+    display: inline;
+    width: 400px;
+    text-transform: uppercase;
+}
+
+.date {
+    width: 70px;
+}
+
+.circle {
+    float: left;
+    width: 800px;
+}
+
+.versionlog h3 {
+    font-size: 30px;
+    margin: 0 0 5px 0;
+}
+
+.versionlog p {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 0 5px 0;
+}
+
+.content {
+    height: auto;
+    clear: both;
+}
+
+.bottombtn {
+    display: inline;
+    float: right;
+}
+
+.deletebtn,
+.editbtn{
+    color: #0099cc;
+    padding-right: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+form {
+    width: 0;
+    height: 0;
+}
+
+.ui-autocomplete-input {
+    display: block;
+    background-color: #fff ;
+    margin: 20px auto;
+    padding: 10px;
+    width: 970px;
+    border-radius: 3px;
+    border: 5px solid #d6e8ee;
+    font-size: 18px;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    font-size: 16px;
+    left: 0;
+    float: left;
+    display: none;
+    min-width: 160px;
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    border: 3px solid #d6e8ee;
+    border-top-width: 0px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+
+/*Modal forms*/
+
+label {
+    width:70px;
+}
+
+.form-control {
+    display:inline-block;
+    width:100%;
+}
+
+#versioncontent {
+    resize: none;
+}
+
+.panel-footer,
+.modal-header {
+    background: #edecea;
+}
+
+
+
+select.form-control{
+    height: 45px;
+}
+.ms-container ul.ms-list {
+    border: none;
+    border-radius: 0;
+}
+.form-control,
+.ms-selectable,
+.ms-selection {
+    background-color: #fff ;
+    border-radius: 3px;
+    border: 5px solid #d6e8ee;
+}
+
+input:focus {
+    border-color: #0099cc;
+}
+
+.ms-container .ms-selectable li.ms-elem-selectable,
+.ms-container .ms-selection li.ms-elem-selection {
+    border-bottom: none;
+    padding: 10px 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.modal-content {
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px -2px #555;
+    -moz-box-shadow: 0 2px 2px -2px #555;
+    box-shadow: 0 2px 2px -2px #555;
+}
+
+.btn.custombtn {
+    background-color: #fff;
+    border: none;
+    color: #0099cc;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px -2px #555;
+    -moz-box-shadow: 0 2px 2px -2px #555;
+    box-shadow: 0 2px 2px -2px #555;
+}
+
+

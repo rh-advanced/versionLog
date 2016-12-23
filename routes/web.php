@@ -10,11 +10,37 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('auth/logout', 'Auth\AuthController@logout');
+Route::get('/', 'VersionLogController@loadextern');
+
+
+
+
+Route::get('intern', [
+    'middleware' => 'auth',
+    'uses' => 'VersionLogController@loadinternpublish'
+]);
+
+Route::get('tv', [
+    'middleware' => 'auth',
+    'uses' => 'VersionLogController@loadinterntv'
+]);
+
+
+Route::get('intern/drafts', [
+    'middleware' => 'auth',
+    'uses' => 'VersionLogController@loadinterndraft'
+]);
+
+
+
+
+Route::get('/logout', 'Auth\AuthController@logout');
+
+Route::resource('versionlog', 'VersionLogController');
+
+Route::post('editid', 'VersionLogController@edit');
+
+
