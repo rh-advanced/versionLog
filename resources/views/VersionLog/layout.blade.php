@@ -71,7 +71,7 @@
                 @endif
             </a>
 
-            <a href="{{ url('/tv') }}"
+            {{--<a href="{{ url('/tv') }}"
                class="topbtn"
                onclick="event.preventDefault();
        document.getElementById('tv-form').submit();">TV
@@ -79,6 +79,7 @@
             <form id="tv-form" action="{{ url('/tv') }}" method="GET">
                 {{ csrf_field() }}
             </form>
+            --}}
         @endif
 
     @endif

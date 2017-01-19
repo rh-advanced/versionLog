@@ -43,7 +43,7 @@
                            data-target="#favoritesModal">
                             Edit
                         </a>
-
+                            <div id="idfield" class="idfield" data-field-id="{{$item['id']}}" ></div>
 
                         <a href="#"
                            class="deletebtn"
@@ -56,16 +56,19 @@
                             {{ csrf_field() }}
                         </form>
                         </a>
-                        <div class="idfield" data-field-id="{{$item['id']}}" ></div>
+                        <div id="idfield" class="idfield" data-field-id="{{$item['id']}}" ></div>
                     @endif
                             @endif
-                        </div>
+
                 </div>
 
             </div>
+            </div>
         @endforeach
+
         <div id="field" data-field-id="{{$dataString}}" ></div>
     @endif
+
 @stop
 
 

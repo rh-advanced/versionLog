@@ -84,7 +84,9 @@ $(document).ready(function() {
 
 
     $('.editbtn').on('click', function () {
-        var id = $(this).next('.idfield').data("field-id");
+
+        var id = $(this).next('#idfield').data("field-id");
+        console.log(id);
         $.ajax({
             type: "POST",
             url: '/editid',
@@ -92,7 +94,7 @@ $(document).ready(function() {
                 id : id
             },
             success: function (response) {
-                console.log('hi');
+
                     $('#editlayer').html(response);
                     $("#editmodal").modal();
                     $('.multi-select').multiSelect();
